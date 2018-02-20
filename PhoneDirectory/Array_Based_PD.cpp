@@ -127,7 +127,7 @@ string Phone_Directory::remove_entry(const string& name) // Exercise 1.7: please
 		return temp_number;
 	}
 	return "";
-}
+}//Joel S.
 
 // Private method implementation
 
