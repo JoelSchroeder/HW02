@@ -53,40 +53,30 @@ public:
 	void save();
 
 private:
-	class Directory_Entry
-
+	class Directory_Entry //joel
 	{
-
 	public:
 
 		Directory_Entry() {} // Default no-argument constructor
 
-		Directory_Entry(std::string the_name, std::string the_number) {
+		Directory_Entry(std::string the_name, std::string the_number); //sets the private strings name and number to the provided data
+		
 
-			// constructor not implemented yet
+		std::string get_name() const;
+			 //returns name
+		
 
-		}
+		std::string get_number() const;
+			 // returns number;
+	
 
-		std::string get_name() const {
+		void set_number(const std::string& new_number);
+			 //sets the private string number to the data provided
 
-			return ""; // method not implemented yet
-
-		}
-
-		std::string get_number() const {
-
-			return ""; // method not implemented yet
-
-		}
-
-		void set_number(const std::string& new_number) {
-
-			// method not implemented yet
-
-		}
 
 	private:
-
+		std::string name;
+		std::string number;
 	};
 
 	// Private Functions

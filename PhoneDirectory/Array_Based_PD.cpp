@@ -170,3 +170,23 @@ void Phone_Directory::reallocate()
 	// Set the_directory to point to the new directory.
 	the_directory = new_directory;
 }
+
+
+
+//Joel//
+Phone_Directory::Directory_Entry::Directory_Entry(std::string the_name, std::string the_number) { //sets the private strings name and number to the provided data
+	name = the_name;
+	number = the_number;
+}
+
+std::string Phone_Directory::Directory_Entry::get_name() const {
+	return name; //returns name
+}
+
+std::string Phone_Directory::Directory_Entry::get_number() const {
+	return number; // returns number;
+}
+
+void Phone_Directory::Directory_Entry::set_number(const std::string& new_number) {
+	number = new_number; //sets the private string number to the data provided
+}
