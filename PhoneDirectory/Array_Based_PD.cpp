@@ -152,6 +152,17 @@ void Phone_Directory::add(const string& name,
 	size++;
 }
 
+/** Removes the entry at the given index.
+@param index The index of the entry to be removed
+*/
+void Phone_Directory::remove_entry(int index)
+{
+	for (int i = index; i > size; i++)//starts the loop at the designated ocation
+	{
+		the_directory[i] = the_directory[i++];//replaces the indicated data location with the next in line and then repeats for all following entires.
+	}
+}
+
 /** Create a new array of directory entries with twice the capacity
 	of the current one.
 	*/
